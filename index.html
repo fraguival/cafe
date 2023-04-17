@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe</title>
+    <link rel="stylesheet" href="sass/custom.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="header__logo">Logo</h1>
+
+            <ul class="header__menu">
+                <a href="#" class="menu__link">Inicio</a>
+                <a href="#" class="menu__link">Ubicacion</a>
+                <a href="#" class="menu__link">Acerca</a>
+            </ul>
+
+            <div class="toggle">
+                |||
+            </div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="banner">
+            <video class="main__coffee" autoplay loop muted>
+                <source src="images/bg-video.mp4">
+            </video>
+
+            <div class="capa"></div>
+
+            <div class="banner__content">
+                <h2 class="banner__title">El Cafecito</h2>
+                <p class="banner__text">El mejor cafe de la colonia</p>
+                <a href="#" class="btn">mas informacion</a>
+            </div>
+        </section>
+
+        <section class="cards container">
+            <div class="card">
+                <img src="images/cultivo.jpg" class="card__image">
+                <h2 class="card__title">Cultivo Ecologico Responsable</h2>
+                <p class="card__text">Trabajamos con caficultores responsables que usan trtatamientos ecologicos.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/comercio.jpg" class="card__image">
+                <h2 class="card__title">Comercio Justo</h2>
+                <p class="card__text">Adquirir cafe en cafe la trece significa que tu dinero va directamente y de manera responsable a los caficultores.</p>
+            </div>
+
+            <div class="card">
+                <img src="images/pasion.jpg" class="card__image">
+                <h2 class="card__title">Pasion por el cafe</h2>
+                <p class="card__text">Nos apasiona el cafe, por lo que siempre trabajamos en servirte un cafe de calidad.</p>
+            </div>
+        </section>
+
+        <section class="block container">
+            <div class="ilustration">
+                <img src="images/CoffeeDoddle.svg" class="group__image">
+            </div>
+
+            <div class="group">
+                <h2 class="group__title">Inicia tu dia con una taza de cafe!!</h2>
+                <p class="group__text">Ordena tu bolsa de cafe a domicilio o busca El Cafecito mas cercano</p>
+                <a href="#" class="btn">ir al mapa</a>
+            </div>
+        </section>
+
+        <section class="form container">
+            <label class="form__tag">Correo Electronico</label>
+            <input type="email" class="form__enter">
+            <a href="#" class="btn">Enviar</a>
+        </section>
+
+        <section class="container">
+            <div class="slider">
+                <ul class="slide">
+                    <li class="slide__card">
+                        <img src="images/slider-1.jpg" alt="" class="slide__image">
+                        <h3 class="slide__title">Capuchino</h3>
+                        <p class="slide__price">$76</p>
+                    </li>
+
+                    <li class="slide__card">
+                        <img src="images/slider-2.jpg" alt="" class="slide__image">
+                        <h3 class="slide__title">Moka</h3>
+                        <p class="slide__price">$76</p>
+                    </li>
+
+                    <li class="slide__card">
+                        <img src="images/slider-3.jpg" alt="" class="slide__image">
+                        <h3 class="slide__title">Latte</h3>
+                        <p class="slide__price">$64</p>
+                    </li>
+
+                    <li class="slide__card">
+                        <img src="images/slider-4.jpg" alt="" class="slide__image">
+                        <h3 class="slide__title">Expreso</h3>
+                        <p class="slide__price">$52</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.6348725338244!2d-107.42438438405695!3d24.77370515482826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bcd0fb175ccc09%3A0x737e9951318aada3!2sConstituyente%20Sebasti%C3%A1n%20Allende%202080%2C%20D%C3%ADaz%20Ordaz%2C%2080180%20Culiac%C3%A1n%20Rosales%2C%20Sin.!5e0!3m2!1ses!2smx!4v1679117696296!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h4 class="map__title">Aquí nos vemos</h4>
+                <p class="map__address">Sebastian Allende 2080, col Diaz Ordaz Culiacan Rosales, Sin.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copy">&copy; El Cafecito</p>
+        </div>
+    </footer>
+
+        
+
+    <script src="js/main.js"></script>
+</body>
+</html>

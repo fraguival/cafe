@@ -1,0 +1,155 @@
+.main {
+    margin-bottom: 12px;
+}
+.banner {
+    position: relative;
+    min-height: 70vh;
+}    
+.main__coffee {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $dark;
+    opacity: .5;
+    mix-blend-mode: overlay;
+}
+.banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner__title {
+    color: $first;
+    font-size: 36px;
+    font-weight: 500;
+}
+.banner__text {
+    color: $first;
+}
+.cards {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+}
+.card {
+    background-color: $second;;
+    color: $first;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px  rgba(34, 51, 51, .8);
+}
+.card__title {
+    
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px;
+}
+.block {
+    color: $first;
+    margin-bottom: 12px;
+    padding: 12px;
+}
+.group__title {
+    font-weight: 500;
+}
+@media (min-width: 768px) {
+    .block {
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+.form {
+    margin-bottom: 12px;
+    padding: 12px;
+}
+.form__tag {
+    display: block;
+    color: $first;
+    margin-bottom: 12px;
+}
+.form__enter {
+    width: 75%;
+    padding: 12px;
+    border-radius: 4px;
+}
+@media (min-width: 800px) {
+    .form__enter {
+        margin-right: 48px;
+    }
+}
+@media (min-width: 1200px) {
+    .form__enter {
+        width: 90%;
+        margin-right: 24px;
+    }
+}
+.slide__card {
+    list-style: none;
+}
+.slide__title, .slide__price {
+    display: inline-block;
+    color: $first;
+    font-weight: normal;
+    margin-right: 12px;
+    padding: 12px;
+}
+@media (min-width: 576px) {
+    .slider {
+            width: 100%;
+            margin: auto;
+            margin-bottom: 24px;
+            overflow: hidden;
+    }
+    .slide {
+            display: flex;
+            gap: 12px;
+            width: 400%;
+            padding: 0;
+            animation: cambio 10s infinite alternate;
+    }
+    .slide__card {
+            width: 100%;
+            
+    }
+    .slide__title, .slide__price {
+            font-size: 24px;
+    }
+    
+    @keyframes cambio {
+            0% {margin-left: 0;}
+            20% {margin-left: 0;}
+    
+            25% {margin-left: -100%;}
+            45% {margin-left: -100%;}
+    
+            50% {margin-left: -200%;}
+            70% {margin-left: -200%;}
+    
+            75% {margin-left: -300%;}
+            100% {margin-left: -300%;}
+    }
+}
+.map__title, .map__address {
+    color: $first;
+    font-weight: normal;
+    margin-left: 48px;
+}
+.footer__copy {
+    color: $first;
+    text-align: center;
+}
+
+
